@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,500;0,600;1,200&display=swap');
+
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* .nav-link {
+    color: black;
+}
+
+.nav-link:hover, .see-more, h1 {
+    color: #56236A;
+} */
+
+.form-signin {
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 1;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.details:hover {
+    background-color: #56236A;
+}
+
+.form-control:focus {
+    border-color: #56236A;
+    box-shadow: 0 0 0 0.2rem #56236A5e;
+}
+
+button {
+    background: #56236A;
+    color: whitesmoke;
+    padding-inline: 2rem;
+    border: none;
+}
+
+button:hover {
+    background: #56236aba;
+    color: #d9b8e6ba;
+}
+
+a {
+    color: #56236A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d9b8e6ba;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #56236A;
+    color: white;
+}
+
+
+/* Nav Styles */
+
+header svg {
+    width: 2.3em;
+    margin-top: -0.6em;
+    cursor: pointer;
+    /* background-color: #56236A; */
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+    color: black;
+    height: 100vh;
+    width: 40%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.5 ease-in-out;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul a {
+    /* color: black; */
+    /* padding: 0.75em 2em; */
+    /* padding-top: 0.75em;
+    padding-bottom: 0.75em; */
+    /* padding-left: 2em; */
+    /* display: block;
+    font-weight: 900; */
+}
+
+nav ul a:hover {
+    background: rgb(235, 235, 235);
+    text-decoration: none;
+}
+
+nav .close {
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+
+@media only screen and (min-width: 920px) {
+    .menu {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+        /* color: white */
+    }
+
+    nav svg.close {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    nav ul a {
+        /* color: white; */
+        font-weight: 600;
+        padding-top: unset;
+        padding-bottom: unset;
+        padding-left: unset;
+    }
+
+    nav ul a:hover {
+        background: none;
+        text-decoration: underline;
+    }
+}
